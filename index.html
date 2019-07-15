@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This</title>
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+
+// check first and last letters
+// check inner letters
+// return false if letters don't match
+
+function pall(args) { // Function to check pallendrome true
+    for (var i = 0; i < args.length; i++) {
+        if (args[i] !== args[args.length - (i + 1)]) { // checks if letters match starting outside going in
+            return false; //don't match
+        }
+    }
+    return true; // all do match
+}
+console.log('noon', pall("noon"));
+console.log('racecar', pall("racecar"));
+console.log(pall("harrison"));
+
+        </script>
+    </body>
+</html>
